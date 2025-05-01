@@ -537,7 +537,7 @@ export class ConfigService {
         REDIS: {
           ENABLED: process.env?.CACHE_REDIS_ENABLED === 'true',
           URI: process.env?.CACHE_REDIS_URI || 'redis://localhost:6379/6',
-          PREFIX_KEY: process.env?.CACHE_REDIS_PREFIX_KEY || 'evolution-cache',
+          PREFIX_KEY: process.env?.CACHE_REDIS_PREFIX_KEY || 'evolution',
           TTL: Number.parseInt(process.env?.CACHE_REDIS_TTL) || 604800,
           SAVE_INSTANCES: process.env?.CACHE_REDIS_SAVE_INSTANCES === 'true',
         },
